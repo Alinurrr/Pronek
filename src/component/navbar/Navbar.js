@@ -23,7 +23,7 @@ function Navbar(props) {
 
   return (
     <>
-      <nav style={{ backgroundColor: '#010032' }} className="navbar navbar-expand-lg navbar-dark">
+      <nav style={{ backgroundColor: '#010032', fontFamily: 'Poppins' }} className="navbar navbar-expand-lg navbar-dark">
         <div className="container-fluid ps-0 pe-4 py-2">
           <NavLink style={imgNavbar} to="/" className="navbar-brand bg-white">
             <img src={NavbarLogo} alt="Logo Pronek" className='mx-5 my-2' />

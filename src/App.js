@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import Router from './router';
+import './App.css'
 
 function App() {
 

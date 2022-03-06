@@ -1,0 +1,46 @@
+.banner {
+  margin-top: 30px;
+}
+
+.banner .card {
+  width: 1044px;
+  height: 600px;
+  border: none;
+}
+
+.banner .card img {
+  border-radius: 14px;
+  width: 100%;
+  height: auto;
+  align-items: center;
+}
+
+.banner .card .text {
+  margin: 0 0 50px 50px;
+}
+
+@media (max-width: 576px) {
+  .banner .card .text {
+    margin: 0 0 10px 10px;
+  }
+}
+
+.banner .card .card-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+@media (max-width: 576px) {
+  .banner .card .card-title {
+    font-size: 28px;
+  }
+}
+
+.banner .card .card-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+}
