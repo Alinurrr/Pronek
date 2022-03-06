@@ -14,7 +14,7 @@ function Navbar(props) {
   const navLink = {
     fontSize: '18px',
     margin: '0 30px',
-    padding: '0',
+    padding: '12px 0',
   };
   const btnAuth = {
     backgroundColor: '#FF8A00',
@@ -34,10 +34,10 @@ function Navbar(props) {
 
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
 
-            <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
+            <ul className="navbar-nav mx-auto mb-2 mb-lg-0 d-flex align-items-center">
               <li className="nav-item">
                 {/* <NavLink style={{fontWeight}} to="/" className="nav-link active" aria-current="page">Beranda</NavLink> */}
-                <NavLink style={navLink} to="/" className="nav-link fw-bold" aria-current="page">Beranda</NavLink>
+                <NavLink style={navLink} exact to="/" className="nav-link fw-bold" aria-current="page">Beranda</NavLink>
               </li>
               <li className="nav-item">
                 <NavLink style={navLink} to="/layanan" className="nav-link fw-bold" aria-current="page">Layanan</NavLink>
@@ -50,8 +50,10 @@ function Navbar(props) {
               </li>
             </ul>
 
-            <NavLink style={btnAuth} to="/register" className="btn me-4 rounded-pill text-white fw-bold" >Sign up</NavLink>
-            <NavLink style={btnAuth} to="/login" className="btn rounded-pill text-white fw-bold" >Log in</NavLink>
+            <div className='d-flex justify-content-center'>
+              <NavLink style={btnAuth} to="/register" className="btn me-4 rounded-pill text-white fw-bold" >Sign up</NavLink>
+              <NavLink style={btnAuth} to="/login" className="btn rounded-pill text-white fw-bold" >Log in</NavLink>
+            </div>
           </div>
         </div>
       </nav>
