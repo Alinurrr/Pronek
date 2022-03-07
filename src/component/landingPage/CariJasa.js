@@ -19,7 +19,7 @@ function CariJasa(props) {
             <div style={{ backgroundColor: '#FF8A00', fontWeight: '600', fontSize: '30px' }} className="col-12 col-lg-5">
               Cari Jasa Mandor / Pekerja Bangunan Disini Yuk...
             </div>
-            <div className="col-12 col-lg-5 py-4">
+            <div className="col-12 col-lg-5 py-3">
 
               <form>
                 <div className="mb-3">

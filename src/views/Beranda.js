@@ -1,5 +1,6 @@
 import React from 'react';
 import CariJasa from '../component/landingPage/CariJasa';
+import Layanan from '../component/landingPage/Layanan';
 // import { NavLink } from 'react-router-dom';
 // import './../style/Beranda.css'
 
@@ -29,6 +30,7 @@ function Beranda(props) {
         </div>
 
         <CariJasa />
+        <Layanan />
       </div>
 
 
