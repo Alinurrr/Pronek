@@ -9,6 +9,7 @@ import GabungMitra from '../views/GabungMitra';
 import CariJasa from '../views/CariJasa';
 import Register from '../views/Auth/Register';
 import Login from '../views/Auth/Login';
+import Footer from '../component/Footer';
 
 function Router(props) {
   return (
@@ -19,6 +20,7 @@ function Router(props) {
         <Route exact path="/">
           <Navbar />
           <Beranda />
+          <Footer />
         </Route>
 
         <Route exact path="/layanan">
