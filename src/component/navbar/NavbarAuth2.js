@@ -27,14 +27,14 @@ function NavbarAuth2(props) {
                 <NavLink exact to="/dashboard/mitra" className="navLink nav-link fw-bold" aria-current="page">Dashboard</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink exact to="/" className="navLink nav-link fw-bold" aria-current="page">Cari
+                <NavLink to="/dashboard/cari-proyek" className="navLink nav-link fw-bold" aria-current="page">Cari
                   Proyek</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink exact to="/" className="navLink nav-link fw-bold" aria-current="page">Penawaran Proyek</NavLink>
+                <NavLink exact to="/dashboard/penawaran-proyek" className="navLink nav-link fw-bold" aria-current="page">Penawaran Proyek</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink exact to="/" className="navLink nav-link fw-bold" aria-current="page">
+                <NavLink exact to="/dashboard/profile" className="navLink nav-link fw-bold" aria-current="page">
                   Profil
                   Saya</NavLink>
               </li>
@@ -46,8 +46,8 @@ function NavbarAuth2(props) {
                   <img src={PhotoPerson} alt="foto mitra" className="mx-3 rounded-circle" style={{ height: '48px', width: '48px', objectFit: 'cover', borderRadius: 'full' }} />
                 </button>
                 <ul className=" dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li><Link className="dropdown-item" to="../admin/profile.html">Profile</Link></li>
-                  <li><Link className="dropdown-item" to="/">Log out</Link></li>
+                  <li><Link exact className="dropdown-item" to="/dashboard/profile">Profile</Link></li>
+                  <li><Link exact className="dropdown-item" to="/">Log out</Link></li>
                 </ul>
               </div>
             </div>

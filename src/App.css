@@ -80,3 +80,22 @@
 .borderTable {
   border-right: 3px solid white;
 }
+
+.btnGuide {
+  width: 100%;
+  min-height: 57px;
+  background: #D4EBFF !important;
+  border-radius: 50px !important;
+  font-weight: 400 !important;
+  font-size: 18px !important;
+  line-height: 27px !important;
+}
+
+.btnBorder {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #000000;
+  padding: 10px 40px;
+  background-color: white;
+}

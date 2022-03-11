@@ -17,6 +17,10 @@ import Footer from '../component/Footer';
 import RegisterMitra from '../views/Auth/RegisterMitra';
 import TableJasa from '../views/TableJasa';
 import DashboardMitra from '../views/Dashboard/Mitra/DashboardMitra';
+import CariProyek from '../views/Dashboard/Mitra/CariProyek';
+import TableProyek from '../views/Dashboard/Mitra/TableProyek';
+import PenawaranProyek from '../views/Dashboard/Mitra/PenawaranProyek';
+import Profile from '../views/Dashboard/Mitra/Profile';
 
 function Router(props) {
   return (
@@ -81,6 +85,28 @@ function Router(props) {
           <NavbarAuth2 />
           <DashboardMitra />
         </Route>
+
+        <Route exact path="/dashboard/cari-proyek">
+          <NavbarAuth2 />
+          <CariProyek />
+        </Route>
+
+        <Route exact path="/dashboard/cari-proyek/hasil">
+          <NavbarAuth2 />
+          <TableProyek />
+        </Route>
+
+        <Route exact path="/dashboard/penawaran-proyek">
+          <NavbarAuth2 />
+          <PenawaranProyek />
+        </Route>
+
+        <Route exact path="/dashboard/profile">
+          <NavbarAuth2 />
+          <Profile />
+        </Route>
+
+
         {/*end dashboard mitra */}
 
       </Switch>
