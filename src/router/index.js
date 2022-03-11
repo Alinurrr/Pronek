@@ -21,6 +21,7 @@ import CariProyek from '../views/Dashboard/Mitra/CariProyek';
 import TableProyek from '../views/Dashboard/Mitra/TableProyek';
 import PenawaranProyek from '../views/Dashboard/Mitra/PenawaranProyek';
 import Profile from '../views/Dashboard/Mitra/Profile';
+import NotFound from '../component/NotFound';
 
 function Router(props) {
   return (
@@ -108,6 +109,11 @@ function Router(props) {
 
 
         {/*end dashboard mitra */}
+
+        {/* 404 not found */}
+        <Route exact path="*" component={NotFound} />
+
+
 
       </Switch>
 

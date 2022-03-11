@@ -26,10 +26,10 @@ function NavbarAuth(props) {
                 <NavLink exact to="/" className="navLink active nav-link fw-bold" aria-current="page">Beranda</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink exact to="/" className="navLink active nav-link fw-bold" aria-current="page">Persyaratan</NavLink>
+                <NavLink exact to="/persyaratan" className="navLink active nav-link fw-bold" aria-current="page">Persyaratan</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink exact to="/" className="navLink active nav-link fw-bold" aria-current="page">Kebijakan Privasi</NavLink>
+                <NavLink exact to="/kebijakan-privasi" className="navLink active nav-link fw-bold" aria-current="page">Kebijakan Privasi</NavLink>
               </li>
             </ul>
           </div>
