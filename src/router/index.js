@@ -13,6 +13,7 @@ import Register from '../views/Auth/Register';
 import Login from '../views/Auth/Login';
 import Footer from '../component/Footer';
 import RegisterMitra from '../views/Auth/RegisterMitra';
+import TableJasa from '../views/TableJasa';
 
 function Router(props) {
   return (
@@ -40,6 +41,12 @@ function Router(props) {
         <Route exact path="/cari-jasa">
           <Navbar />
           <CariJasa />
+          <Footer />
+        </Route>
+
+        <Route exact path="/cari-jasa/hasil">
+          <NavbarWhite />
+          <TableJasa />
         </Route>
 
         {/* authenticated */}

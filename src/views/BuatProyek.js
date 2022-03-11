@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import BorderOrangeLine from '../component/BorderOrangeLine';
 
 function BuatProyek(props) {
 
@@ -11,8 +10,7 @@ function BuatProyek(props) {
   return (
     <>
 
-      <BorderOrangeLine />
-
+      
       {/* Form */}
       <div className="card container" style={{ border: 'none', borderRadius: '60px', backgroundColor: '#010032', marginTop: '45px', marginBottom: '45px' }}>
         <div className="card-body ">

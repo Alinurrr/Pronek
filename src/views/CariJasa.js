@@ -1,14 +1,13 @@
 import React from 'react';
 
+import CariJasaComponent from '../component/landingPage/CariJasa';
+import Layanan from '../component/landingPage/Layanan';
+
 function CariJasa(props) {
   return (
     <>
-
-      <div className='d-flex justify-content-center align-items-center min-vh-100 bg-info text-white'>
-        <h1>Halo ini halaman Cari Jasa</h1>
-      </div>
-
-
+      <CariJasaComponent />
+      <Layanan />
     </>
   );
 }

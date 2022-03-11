@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function CariJasa(props) {
 
@@ -35,7 +36,7 @@ function CariJasa(props) {
                   </select>
                 </div>
                 <div className="d-grid gap-2">
-                  <button style={{ backgroundColor: '#010032', borderRadius: '10px', fontSize: '21px', fontWeight: '800' }} type="submit" className="btn text-white text-center">CARI !</button>
+                  <Link to="cari-jasa/hasil" style={{ backgroundColor: '#010032', borderRadius: '10px', fontSize: '21px', fontWeight: '800' }} type="submit" className="btn text-white text-center">CARI !</Link>
                 </div>
               </form>
 

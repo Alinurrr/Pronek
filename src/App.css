@@ -63,3 +63,20 @@
   line-height: 30px;
   color: #000000;
 }
+
+.btnTable {
+  text-decoration: none;
+  background-color: white;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #000000;
+  padding: 5px 18px;
+  margin: 0 9px 15px;
+}
+
+.borderTable {
+  border-right: 3px solid white;
+}

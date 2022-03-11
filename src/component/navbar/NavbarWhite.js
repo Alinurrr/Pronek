@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 import NavbarLogo from '../../assets/logo-brand1.png'
-
+import BorderOrangeLine from '../BorderOrangeLine';
 
 function NavbarWhite(props) {
 
@@ -57,7 +57,7 @@ function NavbarWhite(props) {
           </div>
         </div>
       </nav>
-
+      <BorderOrangeLine />
     </>
   );
 }
