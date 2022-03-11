@@ -35,7 +35,7 @@ function GabungMitra(props) {
             </div>
             <p style={CardText} className="text-center mt-4 px-4">Banyak kemudahan yang Pronek berikan kepada mitra user, memberikan solusi menemukan proyek dan pekerja bangunan secara cepat dan efisien.</p>
             <div className="col-12 col-lg-6 d-grid gap-2 mt-4">
-              <Link to="/" style={{ backgroundColor: '#010032', borderRadius: '10px', fontSize: '21px', fontWeight: '800' }} type="submit" className="btn text-white text-center">Gabung Mitra</Link>
+              <Link to="/register-mitra" style={{ backgroundColor: '#010032', borderRadius: '10px', fontSize: '21px', fontWeight: '800' }} type="submit" className="btn text-white text-center">Gabung Mitra</Link>
             </div>
           </div>
         </div>
