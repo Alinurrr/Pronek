@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 import NavbarLogo from '../../assets/logo-brand1.png'
 
 
-function Navbar(props) {
+function NavbarWhite(props) {
 
 
   const imgNavbar = {
@@ -23,7 +23,7 @@ function Navbar(props) {
 
   return (
     <>
-      <nav style={{ backgroundColor: '#010032', fontFamily: 'Poppins' }} className="navbar navbar-expand-lg navbar-dark">
+      <nav style={{ backgroundColor: 'white', fontFamily: 'Poppins' }} className="navbar navbar-expand-lg navbar-light">
         <div className="container-fluid ps-0 pe-4 py-2">
           <NavLink style={imgNavbar} to="/" className="navbar-brand bg-white">
             <img src={NavbarLogo} alt="Logo Pronek" className='mx-5 my-2' />
@@ -62,4 +62,4 @@ function Navbar(props) {
   );
 }
 
-export default Navbar;
+export default NavbarWhite;

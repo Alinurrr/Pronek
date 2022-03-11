@@ -3,8 +3,9 @@ import { Switch, Route } from "react-router-dom";
 
 
 import Navbar from '../component/navbar/Navbar';
+import NavbarWhite from '../component/navbar/NavbarWhite';
 import Beranda from '../views/Beranda';
-import Layanan from '../views/Layanan';
+import BuatProyek from '../views/BuatProyek';
 import GabungMitra from '../views/GabungMitra';
 import CariJasa from '../views/CariJasa';
 import Register from '../views/Auth/Register';
@@ -23,9 +24,9 @@ function Router(props) {
           <Footer />
         </Route>
 
-        <Route exact path="/layanan">
-          <Navbar />
-          <Layanan />
+        <Route exact path="/buat-proyek">
+          <NavbarWhite />
+          <BuatProyek />
         </Route>
 
         <Route exact path="/gabung-mitra">

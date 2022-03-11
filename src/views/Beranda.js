@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import CariJasa from '../component/landingPage/CariJasa';
 import GabungMitra from '../component/landingPage/GabungMitra';
 import Layanan from '../component/landingPage/Layanan';
@@ -10,6 +10,11 @@ import Logo from './../assets/logo-brand2.png'
 
 
 function Beranda(props) {
+
+  useEffect(() => {
+    document.title = "Pronek";
+  }, [])
+
 
   return (
     <>
