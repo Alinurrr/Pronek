@@ -33,7 +33,7 @@ function Login(props) {
                 <input type="password" className="form-control fomtInput" id="exampleInputPassword1" />
               </div>
               <div className="col-12 d-grid gap-2 mt-4">
-                <a href="admin/cari-proyek.html" style={{ backgroundColor: '#010032', borderRadius: '20px', fontSize: '21px', fontWeight: 800, padding: '14px 0' }} type="submit" className="btn text-white text-center">Login</a>
+                <a href="/dashboard/mitra" style={{ backgroundColor: '#010032', borderRadius: '20px', fontSize: '21px', fontWeight: 800, padding: '14px 0' }} type="submit" className="btn text-white text-center">Login</a>
               </div></form>
           </div>
           {/* End login Form */}

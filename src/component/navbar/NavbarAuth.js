@@ -5,7 +5,7 @@ import NavbarLogo from '../../assets/logo-brand1.png'
 import BorderOrangeLine from '../BorderOrangeLine';
 
 
-function NavbarWhite(props) {
+function NavbarAuth(props) {
 
   return (
     <>
@@ -44,4 +44,4 @@ function NavbarWhite(props) {
   );
 }
 
-export default NavbarWhite;
+export default NavbarAuth;
