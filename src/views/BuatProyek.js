@@ -1,16 +1,13 @@
-import React, { useEffect } from 'react';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 function BuatProyek(props) {
-
-  useEffect(() => {
-    document.title = "Pronek - Buat Proyek";
-  }, [])
 
 
   return (
     <>
 
-      
+
       {/* Form */}
       <div className="card container" style={{ border: 'none', borderRadius: '60px', backgroundColor: '#010032', marginTop: '45px', marginBottom: '45px' }}>
         <div className="card-body ">
@@ -78,7 +75,7 @@ function BuatProyek(props) {
             {/* button */}
             <div className="row">
               <div className="col d-grid mt-5">
-                <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" style={{ backgroundColor: '#FF8A00', borderRadius: '20px', fontSize: '20px', fontWeight: 700, padding: '14px 0' }} className="btn text-white text-center">Submit</button>
+                <Link to="/proyek/detail" style={{ backgroundColor: '#FF8A00', borderRadius: '20px', fontSize: '20px', fontWeight: 700, padding: '14px 0' }} className="btn text-white text-center">Submit</Link>
               </div>
             </div>
             {/*end button */}

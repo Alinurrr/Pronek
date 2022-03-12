@@ -25,7 +25,7 @@ function Layanan(props) {
 
             <div className="col-12 col-lg-5 mb-3 d-flex flex-column px-4">
               <div style={{ borderRadius: '60px', border: '0' }} className="card bg-dark text-white ">
-                <img src={BannerImage1} className="" alt="gambar" />
+                <img src={BannerImage1} className="h-auto" alt="gambar" />
                 <div className="container text-center mx-auto card-img-overlay d-flex justify-content-end align-items-center flex-column">
                   <h5 style={CardTitle} className="card-title fw-bolder">Proyek Bangunan</h5>
                 </div>
@@ -35,7 +35,7 @@ function Layanan(props) {
 
             <div className="col-12 col-lg-5 mb-3 d-flex flex-column px-4">
               <div style={{ borderRadius: '60px', border: '0' }} className="card bg-dark text-white ">
-                <img src={BannerImage2} className="" alt="gambar" />
+                <img src={BannerImage2} className="h-auto" alt="gambar" />
                 <div className="container text-center mx-auto card-img-overlay d-flex justify-content-end align-items-center flex-column">
                   <h5 style={CardTitle} className="card-title fw-bolder">Proyek Renovasi</h5>
                 </div>

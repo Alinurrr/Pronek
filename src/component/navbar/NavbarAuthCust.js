@@ -24,24 +24,13 @@ function NavbarAuth2(props) {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mx-auto mb-2 mb-lg-0 d-flex align-items-center">
               <li className="nav-item">
-                <NavLink exact to="/dashboard/mitra" className="navLink nav-link fw-bold" aria-current="page">Dashboard</NavLink>
+                <NavLink exact to="/dashboard/cust" className="navLink nav-link fw-bold" aria-current="page">Dashboard</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink to="/dashboard/cari-proyek" className="navLink nav-link fw-bold" aria-current="page">Cari
-                  Proyek</NavLink>
+                <NavLink to="/dashboard/cust/proyek" className="navLink nav-link fw-bold" aria-current="page">Proyek Saya</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink exact to="/dashboard/penawaran-proyek" className="navLink nav-link fw-bold" aria-current="page">Penawaran Proyek</NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink exact to="/dashboard/proyek" className="navLink nav-link fw-bold" aria-current="page">
-                  Proyek
-                  Saya</NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink exact to="/dashboard/profile" className="navLink nav-link fw-bold" aria-current="page">
-                  Profil
-                  Saya</NavLink>
+                <NavLink to="/cari-jasa" className="navLink nav-link fw-bold" aria-current="page">Cari Jasa</NavLink>
               </li>
             </ul>
             <div className="d-flex justify-content-center align-items-center">

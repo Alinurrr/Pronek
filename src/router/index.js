@@ -6,6 +6,7 @@ import Navbar from '../component/navbar/Navbar';
 import NavbarWhite from '../component/navbar/NavbarWhite';
 import NavbarAuth from '../component/navbar/NavbarAuth';
 import NavbarAuth2 from '../component/navbar/NavbarAuth2';
+import NavbarAuthCust from '../component/navbar/NavbarAuthCust';
 
 import Beranda from '../views/Beranda';
 import BuatProyek from '../views/BuatProyek';
@@ -22,6 +23,10 @@ import TableProyek from '../views/Dashboard/Mitra/TableProyek';
 import PenawaranProyek from '../views/Dashboard/Mitra/PenawaranProyek';
 import Profile from '../views/Dashboard/Mitra/Profile';
 import NotFound from '../component/NotFound';
+import DetailProyekUser from '../views/Dashboard/Customer/DetailProyekUser';
+import DashboardCust from '../views/Dashboard/Customer/DashboardCust';
+import Proyek from '../views/Dashboard/Customer/Proyek';
+import ProyekMitra from '../views/Dashboard/Mitra/ProyekMitra';
 
 function Router(props) {
   return (
@@ -81,7 +86,6 @@ function Router(props) {
         {/*end authenticated */}
 
         {/* dashboard mitra */}
-
         <Route exact path="/dashboard/mitra">
           <NavbarAuth2 />
           <DashboardMitra />
@@ -102,13 +106,38 @@ function Router(props) {
           <PenawaranProyek />
         </Route>
 
+        <Route exact path="/dashboard/proyek">
+          <NavbarAuth2 />
+          <ProyekMitra />
+        </Route>
+
         <Route exact path="/dashboard/profile">
           <NavbarAuth2 />
           <Profile />
         </Route>
-
-
         {/*end dashboard mitra */}
+
+        {/* dashboard customer */}
+        <Route exact path="/dashboard/cust">
+          <NavbarAuthCust />
+          <DashboardCust />
+        </Route>
+
+        <Route exact path="/dashboard/cust/proyek">
+          <NavbarAuthCust />
+          <Proyek />
+        </Route>
+
+        <Route exact path="/proyek/detail">
+          <NavbarWhite />
+          <DetailProyekUser />
+        </Route>
+
+        <Route exact path="/dashboard/cust/proyek/detail">
+          <NavbarAuthCust />
+          <DetailProyekUser />
+        </Route>
+        {/*end dashboard user */}
 
         {/* 404 not found */}
         <Route exact path="*" component={NotFound} />

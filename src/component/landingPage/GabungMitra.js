@@ -27,7 +27,7 @@ function GabungMitra(props) {
 
             <div className="col-12 col-lg-6 mb-3 px-4">
               <div style={{ borderRadius: '60px', border: '0' }} className="card bg-dark text-white ">
-                <img src={BannerImage3} style={{ borderRadius: '40px' }} alt="gambar" />
+                <img src={BannerImage3} style={{ borderRadius: '40px' }} className="h-auto" alt="gambar" />
                 <div className="container text-center mx-auto card-img-overlay d-flex justify-content-start align-items-center flex-column">
                   <h5 style={CardTitle} className="card-title fw-bolder text-white">Mitra Pronek</h5>
                 </div>
