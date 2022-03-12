@@ -9,6 +9,17 @@ function TableProyek(props) {
       <div style={{ width: '90%', paddingBottom: '80px', marginTop: '72px' }} className="mx-auto">
         {/* Table Area */}
         <div style={{ maxWidth: '1349px' }} className="mx-auto">
+
+          {/* Title */}
+          <div style={{ marginBottom: '48px' }}>
+            <h1 style={{ fontWeight: 700, fontSize: '32px' }}>⚒️ Cari Proyek </h1>
+            <div className="d-flex align-items-center">
+              <div style={{ fontWeight: 400, fontSize: '14px', maxWidth: '500px' }} className="me-1">Cari berbagai macam proyek yang tersedia dari Semarang dan Yogyakarta.
+                Tertarik? Klik lamar aja!</div>
+            </div>
+          </div>
+          {/* End Title */}
+
           <table className="table text-white py-3 overflow-hidden" style={{ borderRadius: '50px', backgroundColor: '#010032' }}>
             <thead className="text-center" style={{ background: '#5C007C', borderRadius: '50px 50px 0px 0px !important', overflow: 'hidden' }}>
               <tr>

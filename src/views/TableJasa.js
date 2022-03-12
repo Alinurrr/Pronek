@@ -6,6 +6,15 @@ function TableJasa(props) {
     <>
 
       <div className="container mt-4">
+        {/* Title */}
+        <div style={{ marginBottom: '48px' }}>
+          <h1 style={{ fontWeight: 700, fontSize: '32px' }}>⚒️ Cari Jasa Proyek </h1>
+          <div className="d-flex align-items-center">
+            <div style={{ fontWeight: 400, fontSize: '14px', maxWidth: '500px' }} className="me-1">Halaman ini berisi data berbagai macam jasa bangunan seperti
+              mandor, asisten dan pekerja untuk proyekmu.</div>
+          </div>
+        </div>
+        {/* End Title */}
         <div className="row">
           <div className="col-12 col-lg-4 mb-3">
             <div className="card overflow-hidden px-4" style={{ border: '3px solid #FF8A00', boxSizing: 'border-box', borderRadius: '50px', backgroundColor: 'white' }}>

@@ -7,6 +7,14 @@ function Profile(props) {
 
       {/* content */}
       <div style={{ width: '90%', paddingBottom: '80px', marginTop: '72px' }} className="mx-auto">
+        {/* Title */}
+        <div style={{ marginBottom: '48px' }}>
+          <h1 style={{ fontWeight: 700, fontSize: '32px' }}>Profilmu </h1>
+          <div className="d-flex align-items-center">
+            <div style={{ fontWeight: 400, fontSize: '14px', maxWidth: '500px' }} className="me-1">Kustomisasi dan lengkapi identitas diri kamu disini yuk!</div>
+          </div>
+        </div>
+        {/* End Title */}
         {/* Profile Area */}
         <div className="card" style={{ border: '3px solid #010032', boxSizing: 'border-box', borderRadius: '50px', backgroundColor: 'white' }}>
           <div className="card-body ">
