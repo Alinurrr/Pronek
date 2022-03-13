@@ -3,9 +3,14 @@ import { NavLink } from 'react-router-dom';
 
 import NavbarLogo from '../../assets/logo-brand1.png'
 import BorderOrangeLine from '../BorderOrangeLine';
+import { Link } from 'react-router-dom';
+import { useRecoilValue } from 'recoil';
+import { authenticated } from '../../store';
+import UserDropdown from '../UserDropdown';
 
 function NavbarWhite(props) {
 
+  const auth = useRecoilValue(authenticated)
 
   const imgNavbar = {
     borderRadius: '0 50px  50px   0 '
@@ -50,10 +55,15 @@ function NavbarWhite(props) {
               </li>
             </ul>
 
-            <div className='d-flex justify-content-center'>
-              <NavLink style={btnAuth} to="/register" className="btn me-4 rounded-pill text-white fw-bold" >Sign up</NavLink>
-              <NavLink style={btnAuth} to="/login" className="btn rounded-pill text-white fw-bold" >Log in</NavLink>
-            </div>
+            {
+              auth.check ?
+                <UserDropdown userContent={{ TextColor: "text-dark" }} />
+                :
+                <div className='d-flex justify-content-center'>
+                  <Link style={btnAuth} to="/register" className="btn me-4 rounded-pill text-white fw-bold" >Sign up</Link>
+                  <Link style={btnAuth} to="/login" className="btn rounded-pill text-white fw-bold" >Log in</Link>
+                </div>
+            }
           </div>
         </div>
       </nav>

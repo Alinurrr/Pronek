@@ -75,7 +75,7 @@ function BuatProyek(props) {
             {/* button */}
             <div className="row">
               <div className="col d-grid mt-5">
-                <Link to="/proyek/detail" style={{ backgroundColor: '#FF8A00', borderRadius: '20px', fontSize: '20px', fontWeight: 700, padding: '14px 0' }} className="btn text-white text-center">Submit</Link>
+                <Link to="/detail-proyek" style={{ backgroundColor: '#FF8A00', borderRadius: '20px', fontSize: '20px', fontWeight: 700, padding: '14px 0' }} className="btn text-white text-center">Submit</Link>
               </div>
             </div>
             {/*end button */}

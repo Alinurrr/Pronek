@@ -1,7 +1,43 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { useHistory } from 'react-router';
 import { Link } from 'react-router-dom';
+import { useSetRecoilState } from 'recoil';
+import { authenticated } from '../../store';
 
 function Login(props) {
+
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+  const redirect = useHistory()
+  const setAuth = useSetRecoilState(authenticated)
+
+  const credentials = {
+    email,
+    password,
+  }
+
+
+  const login = async (e) => {
+    console.log(credentials);
+    setAuth({
+      check: true,
+      user: credentials
+    })
+
+    if (email === 'mitra@pronek.id') {
+      redirect.push('/dashboard/mitra')
+    } else {
+      redirect.push('/dashboard')
+    }
+
+  }
+
+  useEffect(() => {
+    console.log(credentials);
+  }, [])
+
+
+
   return (
     <>
 
@@ -23,18 +59,19 @@ function Login(props) {
             LOG IN
           </div>
           <div className="card-body ">
-            <form style={{ maxWidth: '600px', padding: '58px 0 120px' }} className="mx-auto">
+            <form onSubmit={login} style={{ maxWidth: '600px', padding: '58px 0 120px' }} className="mx-auto">
               <div className="mb-3">
-                <label htmlFor="exampleInputEmail1" className="fomtTitle form-label">Email address</label>
-                <input type="email" className="form-control fomtInput" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                <label htmlFor="email" className="fomtTitle form-label">Email address</label>
+                <input autoFocus type="email" className="form-control fomtInput" id="email" name='email' onChange={(e) => setEmail(e.target.value)} value={email} required />
               </div>
               <div className="mb-3">
-                <label htmlFor="exampleInputPassword1" className="fomtTitle form-label">Password</label>
-                <input type="password" className="form-control fomtInput" id="exampleInputPassword1" />
+                <label htmlFor="password" className="fomtTitle form-label">Password</label>
+                <input type="password" className="form-control fomtInput" id="password" name="password" onChange={(e) => setPassword(e.target.value)} value={password} required />
               </div>
               <div className="col-12 d-grid gap-2 mt-4">
-                <Link to="/dashboard/cust" style={{ backgroundColor: '#010032', borderRadius: '20px', fontSize: '21px', fontWeight: 800, padding: '14px 0' }} type="submit" className="btn text-white text-center">Login</Link>
-                <Link to="/dashboard/mitra" style={{ backgroundColor: '#010032', borderRadius: '20px', fontSize: '21px', fontWeight: 800, padding: '14px 0' }} type="submit" className="btn text-white text-center">Login Mitra</Link>
+                <button type="submit" style={{ backgroundColor: '#010032', borderRadius: '20px', fontSize: '21px', fontWeight: 800, padding: '14px 0' }} type="submit" className="btn text-white text-center">Login</button>
+                {/* <Link to="/dashboard/cust" style={{ backgroundColor: '#010032', borderRadius: '20px', fontSize: '21px', fontWeight: 800, padding: '14px 0' }} type="submit" className="btn text-white text-center">Login</Link>
+                <Link to="/dashboard/mitra" style={{ backgroundColor: '#010032', borderRadius: '20px', fontSize: '21px', fontWeight: 800, padding: '14px 0' }} type="submit" className="btn text-white text-center">Login Mitra</Link> */}
               </div></form>
           </div>
           {/* End login Form */}

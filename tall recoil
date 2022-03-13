@@ -1,0 +1,19 @@
+[33m74d7ea6[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m make a description for few table
+[33m79621e5[m make dasboard for customer, detail proyek, and history proyek
+[33me31cbe4[m make page 404 NotFound
+[33m3c16bbb[m make page for cari proyek, penawaran proyek, table proyek, and page profile
+[33m7d824b4[m simple dashboard page for mitra
+[33m414bbc3[m slicing page cari jasa and table hasil cari jasa
+[33m109d027[m complete slicing page login, register, register mitra, and gabung mitra
+[33m6d9ec5a[m make white navbar, orange border, and buat proyek page
+[33m6cc1ad1[m footer
+[33m1579f9b[m landing page gabung mitra
+[33mf0ebbe7[m landing page layanan pronek
+[33m1fe30da[m page cari jasa
+[33mf675f83[m banner header beranda
+[33m05a5394[m hero section beranda page, custom font family
+[33m6c408d0[m custom title and favico
+[33mf0d05dd[m navbar isue fixed
+[33m9f232ae[m simple routing and build pronek navbar
+[33m281a7da[m 1. npx create react app, 2. install bootstrap 5
+[33m78cd73f[m Initialize project using Create React App

@@ -1,11 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
-
+import { useRecoilValue } from 'recoil';
 import NavbarLogo from '../../assets/logo-brand1.png'
+import { authenticated } from '../../store';
+import UserDropdown from '../UserDropdown';
 
 
 function Navbar(props) {
-
+  const auth = useRecoilValue(authenticated)
 
   const imgNavbar = {
     borderRadius: '0 50px  50px   0 '
@@ -22,6 +25,7 @@ function Navbar(props) {
   };
 
   return (
+
     <>
       <nav style={{ backgroundColor: '#010032', fontFamily: 'Poppins' }} className="navbar navbar-expand-lg navbar-dark">
         <div className="container-fluid ps-0 pe-4 py-2">
@@ -40,7 +44,10 @@ function Navbar(props) {
                 <NavLink style={navLink} exact to="/" className="nav-link fw-bold" aria-current="page">Beranda</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink style={navLink} to="/buat-proyek" className="nav-link fw-bold" aria-current="page">Buat Proyek</NavLink>
+                {
+                  auth.user.email !== "mitra@pronek.id" &&
+                  <NavLink style={navLink} to="/buat-proyek" className="nav-link fw-bold" aria-current="page">Buat Proyek</NavLink>
+                }
               </li>
               <li className="nav-item">
                 <NavLink style={navLink} to="/gabung-mitra" className="nav-link fw-bold" aria-current="page">Gabung Mitra</NavLink>
@@ -50,13 +57,20 @@ function Navbar(props) {
               </li>
             </ul>
 
-            <div className='d-flex justify-content-center'>
-              <NavLink style={btnAuth} to="/register" className="btn me-4 rounded-pill text-white fw-bold" >Sign up</NavLink>
-              <NavLink style={btnAuth} to="/login" className="btn rounded-pill text-white fw-bold" >Log in</NavLink>
-            </div>
+            {
+              auth.check ?
+                <UserDropdown userContent={{ TextColor: "text-white" }} />
+                :
+                <div className='d-flex justify-content-center'>
+                  <Link style={btnAuth} to="/register" className="btn me-4 rounded-pill text-white fw-bold" >Sign up</Link>
+                  <Link style={btnAuth} to="/login" className="btn rounded-pill text-white fw-bold" >Log in</Link>
+                </div>
+            }
+
           </div>
         </div>
       </nav>
+
 
     </>
   );

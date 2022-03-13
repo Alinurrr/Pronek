@@ -5,15 +5,20 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from "react-router-dom";
 
+import { RecoilRoot } from 'recoil';
+
+
 import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.css';
 
 ReactDOM.render(
   <React.StrictMode>
 
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <RecoilRoot>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </RecoilRoot>
 
   </React.StrictMode>,
   document.getElementById('root')

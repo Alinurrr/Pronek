@@ -12,7 +12,7 @@ function DetailProyekUser(props) {
 
         {/* Title */}
         <div style={{ marginBottom: '48px', marginTop: '36px' }}>
-          <h1 style={{ fontWeight: 700, fontSize: '32px' }}>⚒️ Proyek Kamu </h1>
+          <h1 style={{ fontWeight: 700, fontSize: '32px' }}>⚒️ Nama Proyek Kamu </h1>
           <div className="d-flex align-items-center">
             <div style={{ fontWeight: 400, fontSize: '14px', maxWidth: '500px' }} className="me-1">Halaman ini berisi hasil submit dari proyek yang kamu upload.
               Berisi tabel detail proyek, pelamar proyek, dan pekerja yang kamu pilih.</div>
