@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { useHistory } from 'react-router';
 import { Link } from 'react-router-dom';
 import { useSetRecoilState } from 'recoil';
@@ -63,7 +63,7 @@ function Login(props) {
                 <input type="password" className="form-control fomtInput" id="password" name="password" onChange={(e) => setPassword(e.target.value)} value={password} required />
               </div>
               <div className="col-12 d-grid gap-2 mt-4">
-                <button type="submit" style={{ backgroundColor: '#010032', borderRadius: '20px', fontSize: '21px', fontWeight: 800, padding: '14px 0' }} type="submit" className="btn text-white text-center">Login</button>
+                <button type="submit" style={{ backgroundColor: '#010032', borderRadius: '20px', fontSize: '21px', fontWeight: 800, padding: '14px 0' }} className="btn text-white text-center">Login</button>
                 {/* <Link to="/dashboard/cust" style={{ backgroundColor: '#010032', borderRadius: '20px', fontSize: '21px', fontWeight: 800, padding: '14px 0' }} type="submit" className="btn text-white text-center">Login</Link>
                 <Link to="/dashboard/mitra" style={{ backgroundColor: '#010032', borderRadius: '20px', fontSize: '21px', fontWeight: 800, padding: '14px 0' }} type="submit" className="btn text-white text-center">Login Mitra</Link> */}
               </div></form>
