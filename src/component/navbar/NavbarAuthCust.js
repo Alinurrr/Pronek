@@ -33,7 +33,7 @@ function NavbarAuthCust(props) {
                 <NavLink to="/dashboard/cust/proyek" className="navLink nav-link fw-bold" aria-current="page">Proyek Saya</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink to="/cari-jasa" className="navLink nav-link fw-bold" aria-current="page">Cari Jasa</NavLink>
+                <NavLink to="/dashboard/cust/cari-jasa" className="navLink nav-link fw-bold" aria-current="page">Cari Jasa</NavLink>
               </li>
               <li className="nav-item">
                 <NavLink to="/dashboard/profile" className="navLink nav-link fw-bold" aria-current="page">Profile Saya</NavLink>

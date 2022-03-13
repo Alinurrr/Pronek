@@ -38,7 +38,7 @@ function NavbarAuthMtr(props) {
               </li>
               <li className="nav-item">
                 <NavLink exact to="/dashboard/proyek" className="navLink nav-link fw-bold" aria-current="page">
-                  Proyek
+                  Lamaran
                   Saya</NavLink>
               </li>
               <li className="nav-item">

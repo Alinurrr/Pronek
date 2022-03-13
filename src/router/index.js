@@ -40,21 +40,17 @@ function Router(props) {
         {/* must login */}
         <Route exact path="/buat-proyek">
           <Authenticated>
-            <AuthCust>
-              <Navbar />
-              {/* <NavbarWhite /> */}
-              <BuatProyek />
-            </AuthCust>
+            <Navbar />
+            {/* <NavbarWhite /> */}
+            <BuatProyek />
           </Authenticated>
         </Route>
 
         <Route exact path="/detail-proyek">
           <Authenticated>
-            <AuthCust>
-              <Navbar />
-              {/* <NavbarWhite /> */}
-              <DetailProyekUser />
-            </AuthCust>
+            <Navbar />
+            {/* <NavbarWhite /> */}
+            <DetailProyekUser />
           </Authenticated>
         </Route>
 

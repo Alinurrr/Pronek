@@ -18,7 +18,6 @@ function Login(props) {
 
 
   const login = async (e) => {
-    console.log(credentials);
     setAuth({
       check: true,
       user: credentials
@@ -27,15 +26,10 @@ function Login(props) {
     if (email === 'mitra@pronek.id') {
       redirect.push('/dashboard/mitra')
     } else {
-      redirect.push('/dashboard')
+      redirect.push('/dashboard/cust')
     }
 
   }
-
-  useEffect(() => {
-    console.log(credentials);
-  }, [])
-
 
 
   return (

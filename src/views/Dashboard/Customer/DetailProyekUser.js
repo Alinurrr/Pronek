@@ -4,6 +4,7 @@ import ImageProyek from '../../../assets/fotoproyek.png'
 import IconInfo from '../../../assets/icon/info.svg'
 import IconPelamar1 from '../../../assets/icon/icon-pelamar1.svg'
 import IconPelamar2 from '../../../assets/icon/icon-pelamar2.svg'
+import { Link } from 'react-router-dom';
 
 function DetailProyekUser(props) {
   return (
@@ -241,7 +242,7 @@ function DetailProyekUser(props) {
                     <tr>
                       <td colSpan="4" className="borderTable">
                         <div className="py-3">-- Belum ada pekerja di posisi ini --</div>
-                        <div className="py-3">Ayo segera rekrut / <a href="/cari-jasa">Cari pekerja lain</a></div>
+                        <div className="py-3">Ayo segera rekrut / <Link to="/dashboard/cust/cari-jasa">Cari pekerja lain</Link></div>
                       </td>
                     </tr>
 

@@ -18,6 +18,8 @@ import DetailProyekUser from '../views/Dashboard/Customer/DetailProyekUser';
 
 import AuthMitra from '../middleware/AuthMitra';
 import AuthCust from '../middleware/AuthCust';
+import TableJasa from '../views/TableJasa';
+import BuatProyekCust from '../views/Dashboard/Customer/BuatProyekCust';
 
 
 
@@ -34,7 +36,9 @@ function LayoutDashboard(props) {
           {/* dashboard customer */}
           <Route exact path="/dashboard/cust" component={DashboardCust} />
           <Route exact path="/dashboard/cust/proyek" component={Proyek} />
+          <Route exact path="/dashboard/cust/proyek/buat-proyek" component={BuatProyekCust} />
           <Route exact path="/dashboard/cust/proyek/detail" component={DetailProyekUser} />
+          <Route exact path="/dashboard/cust/cari-jasa" component={TableJasa} />
         </AuthCust>
       </Switch>
       {/* end dashboard customer */}

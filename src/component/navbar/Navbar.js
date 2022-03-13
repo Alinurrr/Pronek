@@ -19,10 +19,7 @@ function Navbar(props) {
     margin: '0 30px',
     padding: '12px 0',
   };
-  const btnAuth = {
-    backgroundColor: '#FF8A00',
-    fontSize: '21px'
-  };
+
 
   return (
 
@@ -44,10 +41,7 @@ function Navbar(props) {
                 <NavLink style={navLink} exact to="/" className="nav-link fw-bold" aria-current="page">Beranda</NavLink>
               </li>
               <li className="nav-item">
-                {
-                  auth.user.email !== "mitra@pronek.id" &&
-                  <NavLink style={navLink} to="/buat-proyek" className="nav-link fw-bold" aria-current="page">Buat Proyek</NavLink>
-                }
+                <NavLink style={navLink} to="/buat-proyek" className="nav-link fw-bold" aria-current="page">Buat Proyek</NavLink>
               </li>
               <li className="nav-item">
                 <NavLink style={navLink} to="/gabung-mitra" className="nav-link fw-bold" aria-current="page">Gabung Mitra</NavLink>
@@ -62,8 +56,8 @@ function Navbar(props) {
                 <UserDropdown userContent={{ TextColor: "text-white" }} />
                 :
                 <div className='d-flex justify-content-center'>
-                  <Link style={btnAuth} to="/register" className="btn me-4 rounded-pill text-white fw-bold" >Sign up</Link>
-                  <Link style={btnAuth} to="/login" className="btn rounded-pill text-white fw-bold" >Log in</Link>
+                  <Link to="/register" className="btn btnAuth me-4 rounded-pill text-white fw-bold" >Sign up</Link>
+                  <Link to="/login" className="btn btnAuth rounded-pill text-white fw-bold" >Log in</Link>
                 </div>
             }
 
