@@ -23,7 +23,6 @@ import LayoutDashboard from '../layout/LayoutDashboard';
 import NotFound from '../component/NotFound';
 import MustLogin from '../component/MustLogin';
 import DetailProyekUser from '../views/Dashboard/Customer/DetailProyekUser';
-import AuthCust from '../middleware/AuthCust';
 
 function Router(props) {
   return (
