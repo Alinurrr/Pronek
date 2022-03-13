@@ -289,7 +289,7 @@ function TableJasa(props) {
                 <div className="modal-content" style={{ borderRadius: '50px' }}>
                   <div className="modal-body text-center">
                     <h1>
-                      Log in dulu yuk!
+                      ⚠️ Log in dulu yuk! ⚠️
                     </h1>
                     <p>
                       Sebelum merekrut pekerja kamu harus login terlebih dahulu.
