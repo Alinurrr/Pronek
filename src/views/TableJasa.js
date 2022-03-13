@@ -1,7 +1,13 @@
 import React from 'react';
+import { useHistory } from 'react-router';
+import { useRecoilValue } from 'recoil';
+import { authenticated } from '../store';
 import PhotoPerson from './../assets/person1.png'
 
 function TableJasa(props) {
+  const auth = useRecoilValue(authenticated)
+  const redirect = useHistory()
+
   return (
     <>
 
@@ -251,29 +257,56 @@ function TableJasa(props) {
             </div>
           </div>
         </div>
+
+
         {/* Modal Rekrut*/}
-        <div className="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex={-1} aria-labelledby="staticBackdropLabel" aria-hidden="true">
-          <div className="modal-dialog modal-lg modal-dialog-centered">
-            <div className="modal-content" style={{ borderRadius: '50px' }}>
-              <div className="modal-body text-center">
-                <h1>
-                  BERHASIL MEREKRUT!
-                </h1>
-                <p>
-                  Kamu sudah berhasil merekrut, selanjutnya Call Center akan menghubungimu dalam waktu 1x24 jam. Pastikan kamu
-                  menerima panggilan untuk menyepakati kontrak kerja.
-                </p>
-              </div>
-              <div className="modal-footer border-0 d-flex justify-content-center">
-                <button style={{ background: '#FF8A00', padding: '5px 33px', borderRadius: '30px', fontWeight: 600, fontSize: '18px', lineHeight: '22px', textAlign: 'center' }} type="button" data-bs-dismiss="modal">OK</button>
+        {/* Check auth validation before recruite*/}
+        {
+          auth.check ?
+
+            <div className="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex={-1} aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div className="modal-dialog modal-lg modal-dialog-centered">
+                <div className="modal-content" style={{ borderRadius: '50px' }}>
+                  <div className="modal-body text-center">
+                    <h1>
+                      BERHASIL MEREKRUT!
+                    </h1>
+                    <p>
+                      Kamu sudah berhasil merekrut, selanjutnya Call Center akan menghubungimu dalam waktu 1x24 jam. Pastikan kamu
+                      menerima panggilan untuk menyepakati kontrak kerja.
+                    </p>
+                  </div>
+                  <div className="modal-footer border-0 d-flex justify-content-center">
+                    <button style={{ background: '#FF8A00', padding: '5px 33px', borderRadius: '30px', fontWeight: 600, fontSize: '18px', lineHeight: '22px', textAlign: 'center' }} type="button" data-bs-dismiss="modal">OK</button>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
+
+            :
+            <div className="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex={-1} aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div className="modal-dialog modal-lg modal-dialog-centered">
+                <div className="modal-content" style={{ borderRadius: '50px' }}>
+                  <div className="modal-body text-center">
+                    <h1>
+                      Log in dulu yuk!
+                    </h1>
+                    <p>
+                      Sebelum merekrut pekerja kamu harus login terlebih dahulu.
+                    </p>
+                  </div>
+                  <div className="modal-footer border-0 d-flex justify-content-center">
+                    <button onClick={() => redirect.push('/login')} data-bs-dismiss="modal" className='btn' style={{ background: '#FF8A00', padding: '5px 33px', borderRadius: '30px', fontWeight: 600, fontSize: '18px', lineHeight: '22px', textAlign: 'center' }}  >Log in</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        }
+
+
+
+
       </div>
-
-
-
     </>
   );
 }
